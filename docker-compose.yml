@@ -4,12 +4,12 @@ services:
         build: app
     app1:
         build: app1
-    volumes:
-        - /home/ruslan/nginx:/usr/share/nginx/html
     proxy:
         build: proxy
         ports:
         - "80:80"
+    volumes:
+      - /home/ruslan/nginx:/usr/share/nginx/html
 
 
 
