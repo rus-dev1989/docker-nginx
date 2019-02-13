@@ -1,4 +1,4 @@
-version: '3'
+version: '2'
 services:
     app:
         build: app
@@ -8,8 +8,8 @@ services:
         build: proxy
         ports:
         - "80:80"
-    volumes:
-      - /home/ruslan/nginx:/usr/share/nginx/html
+   # volumes:
+    #  - /home/ruslan/nginx:/usr/share/nginx/html
 
 
 
